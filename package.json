@@ -1,8 +1,8 @@
 {
-  "name": "pink-16",
-  "version": "16.0.0",
+  "name": "",
+  "version": "",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -21,7 +21,15 @@
     "posthtml": "^0.11.3",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.4.2",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -47,6 +55,7 @@
     "node": "8.15"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }
