@@ -1,0 +1,127 @@
+@font-face {
+	font-family: 'BalsamiqSans';
+	src: url("../fonts/BalsamiqSans-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'BalsamiqSans';
+	src: url("../fonts/BalsamiqSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	min-width: 320px;
+	font-family: 'BalsamiqSans', 'Arial', sans-serif;
+	background-color: $bgColor-2;
+
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 87%;
+	margin: 0 auto;
+}
+
+.title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: normal;
+	border-bottom: 2px solid $textColor-2;
+	@include setFont(24px, 28px, bold, $textColor-2);
+}
+
+.button {
+	padding: 10px;
+	width: 160px;
+	background-color: transparent;
+	border: 2px solid #FF6347;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+	@include setFont(14px, 18px, normal, $textColor);
+
+	&:hover {
+		background-color: #FF6347;
+		color: $textColor-3;
+		transition: 0.3s ease-in;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+@media (min-width: 660px) {
+	.wrapper {
+		width: 90%;
+		max-width: 660px;
+	}
+
+	.title {
+	}
+}
+
+@media (min-width: 960px) {
+	.wrapper {
+		width: 96%;
+		max-width: 960px;
+	}
+
+	.container {
+		padding-bottom: 80px;
+		display: flex;
+		justify-content: space-between;
+		width: 96%;
+		max-width: 960px;
+		margin: 0 auto;
+
+		.wrapper {
+			width: 100%;
+		}
+	}
+
+	.button {
+		@include setFont(18px, 22px, normal, $textColor);
+		padding: 15px;
+	}
+}

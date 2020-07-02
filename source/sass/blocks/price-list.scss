@@ -1,0 +1,30 @@
+.price-list {
+	background-color: $bgColor-2;
+	border: 2px solid $bgColor;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.price-list__item {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	@include setFont(16px, 20px, normal, $textColor);
+}
+
+.price-list__price {
+	font-weight: bold;
+}
+
+.price-list__name {
+	max-width: 70%;
+	text-align: left;
+}
+
+@media (min-width: 960px) {
+	.price-list {
+		width: 100%;
+		background-color: $bgColor-3;
+		border-color: $elemColor;
+	}
+}

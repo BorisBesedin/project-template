@@ -1,4 +1,22 @@
+@import "normalize.scss";
 @import "variables.scss";
 @import "mixin.scss";
 @import "scaffolding.scss";
+@import "animation.scss";
+@import "blocks/page-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/about.scss";
+@import "blocks/features.scss";
+@import "blocks/services.scss";
+@import "blocks/price.scss";
+@import "blocks/price-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/sale.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";
+@import "blocks/popup.scss";
+@import "blocks/info-popup.scss";
+@import "blocks/procedure.scss";
 

@@ -1,0 +1,61 @@
+.sale {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.sale__list {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sale__item {
+	margin-bottom: 20px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: $bgColor-3;
+	border: 2px solid $bgColor;
+	border-radius: 10px;
+	padding: 20px;
+	transition: 0.3s;
+
+	& span {
+		margin-top: 20px;
+		@include setFont(16px, 20px, bold, $bgColor-4);
+		text-align: center;
+	}
+
+	&:hover {
+		box-shadow: 0 5px 10px 0 $bgColor-4;
+		transform: scale(1.01);
+		transition: 0.3s;
+	}
+}
+
+.sale__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sale__image {
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/sale-icon.png");
+	background-size: contain;
+}
+
+.sale__description {
+	width: 70%;
+	@include setFont(16px, 20px, normal, $textColor-2);
+}
+
+@media (min-width: 960px) {
+	.sale {
+		width: 45%;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}

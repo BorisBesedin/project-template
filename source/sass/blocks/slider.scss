@@ -1,0 +1,142 @@
+.slider {
+	position: relative;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.slider__title {
+	@include setFont(18px, 22px, bold, $textColor-2);
+	width: 150px;
+}
+
+.slider__slides {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.slider__slide--show {
+	display: flex;
+}
+
+.slider__slide--hide {
+	display: none;
+}
+
+.slider__slide {
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.slider__content {
+	margin-top: 60px;
+	min-height: 300px;
+	width: 100%;
+}
+
+.slider__controls {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+.slider__button {
+	position: relative;
+	background-color: transparent;
+	border: none;
+	// outline: none;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+
+	&::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		border: 25px solid transparent;		
+		opacity: 0.6;
+		transition: 0.3s ease-in;
+	}
+
+	&:hover::after {
+		opacity: 1;
+		transition: 0.3s ease-in;
+	}	
+}
+
+.slider__prev {
+	&::after {
+		border-right: 25px solid $bgColor;
+		left: -25%;
+	}
+}
+
+.slider__next {
+	&::after {
+		left: 25%;
+		border-left: 25px solid $bgColor;
+	}
+}
+
+@media (min-width: 960px) {
+	.slider__title {
+		@include setFont(22px, 28px, bold, $textColor-2);
+		width: auto;
+	}
+
+	.slider--desktop .slider__slide {
+		width: 220px;
+		display: flex;
+		margin-bottom: 40px;
+	}
+
+	.slider--desktop .slider__controls {
+		display: none;
+	}
+
+	.slider__slides {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+		justify-content: space-between;
+	}
+
+	.slider--desktop .slider__content {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+
+	.slider__button {
+		width: 70px;
+		height: 70px;
+
+			&::after {
+			border: 35px solid transparent;		
+		}
+	}
+
+	.slider__prev {
+		&::after {
+			border-right: 35px solid $bgColor;
+			left: -25%;
+		}
+	}
+
+	.slider__next {
+		&::after {
+			left: 25%;
+			border-left: 35px solid $bgColor;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.page-header {
+	padding-top: 20px;
+	width: 100%;
+	min-height: 60px;
+}
+
+@media (min-width: 960px) {
+	.page-header .wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.page-header__logo img {
+		width: 300px;
+		margin-right: 20px;
+	}
+}

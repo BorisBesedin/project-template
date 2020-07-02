@@ -1,0 +1,65 @@
+.procedure {
+	padding: 10px;
+	overflow-y: scroll;
+	height: 100%;
+	border: 2px solid $elemColor;
+	border-radius: 10px;
+	background-color: $bgColor-3;
+}
+
+.procedure__description {
+	@include setFont(16px, 22px, normal, $textColor);
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.procedure__title {
+	margin-top: 20px;
+	@include setFont(18px, 22px, bold, $textColor-2);
+}
+
+.procedure__list {
+	margin-top: 20px;
+	text-align: left;
+	@include setFont(16px, 22px, normal, $textColor);
+}
+
+.procedure__item {
+	position: relative;
+	padding-left: 30px;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		top: 5px;
+		left: 0;
+		background-color: $elemColor;
+	}
+}
+
+.procedure__submenu h5 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	@include setFont(18px, 22px, bold, $textColor);
+}
+
+@media (min-width: 960px) {
+	.procedure__description {
+		@include setFont(18px, 24px, normal, $textColor);
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	.procedure__title {
+		margin-top: 20px;
+		@include setFont(22px, 28px, bold, $textColor-2);
+	}
+
+	.procedure__list {
+		margin-top: 20px;
+		text-align: left;
+		@include setFont(18px, 24px, normal, $textColor);
+	}
+}

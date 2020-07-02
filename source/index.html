@@ -1,16 +1,655 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Захарова Татьяна</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div style="display: none">
-        <include src="build/img/sprite.svg"></include>
+        <include src="./build/img/sprite.svg"></include>
     </div>
+
+    <header class="page-header">
+		<div class="wrapper">
+			<nav class="page-header__nav navigation navigation--closed">
+				<button type="button" class="navigation__toggle">
+					<span class="visually-hidden">Меню</span>
+				</button>
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link" data-scrollid="about">Кто это</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link" data-scrollid="features">Почему</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link" data-scrollid="services">Услуги</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link" data-scrollid="price">Цены</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link" data-scrollid="sale">Акции</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link" data-scrollid="contacts">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="page-main">
+		<section class="about">
+			<div class="wrapper">
+				<h2 class="visually-hidden">Обо мне</h2>
+				<div class="about__container">
+					<div class="about__image">
+						<img src="img/about-img.png" alt="super-master">
+						<div class="about__social social">
+							<ul class="social__list">
+								<li class="social__item">
+									<a href="https://vk.com/tanya_sugaring" class="social__link">
+										<span class="visually-hidden">вконтакте</span>
+										<svg class="social__icon" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40">
+							                <use xlink:href="#vk-icon"></use>
+							            </svg>
+									</a>
+								</li>
+
+								<li class="social__item">
+									<a href="https://www.instagram.com/tanya_sugaring/" class="social__link">
+										<span class="visually-hidden">инстаграм</span>
+										<svg class="social__icon" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40">
+							                <use xlink:href="#insta-icon"></use>
+							            </svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<h3 class="about__title">
+						Привет! Я Ануфриева Таня, и у меня черный пояс по депиляции и массажу!⠀
+					</h3>
+				</div>					
+				<ul class="about__description">
+					<li class="about__item">С 2014 года занимаюсь красотой ваших тел</li>
+					<li class="about__item">Со мной «апельсиновые корки» встанут и уйдут</li>
+					<li class="about__item">Знаю секреты гладкого и красивого тела</li>
+					<li class="about__item">Смело выбрасывай бритву! гладкие ножки теперь моя забота</li>
+					<li class="about__item">Хочешь снова влезть в свое любимое платье? Тогда пиши мне</li>
+					<li class="about__item">Жду тебя в уютной студии в центре города</li>
+				</ul>
+				<button class="order-button button about__order">Записаться</button>				
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="wrapper">
+				<h2 class="title features__title">Почему я?</h2>
+				<ul class="features__list">
+					<li class="features__item">
+						<div class="features__img"></div>
+						<p>Опыт работы более 5 лет</p>
+					</li>
+					<li class="features__item">
+						<div class="features__img"></div>
+						<p>Я до сих пор учусь и развиваюсь в своих специальностях. Имею более 20 сертификатов</p>
+					</li>
+					<li class="features__item">
+						<div class="features__img"></div>
+						<p>Сама люблю когда красиво, приятно и главное качественно! Чтобы вот прям без лишней лапши на ушах я была довольна своим телом и качеством услуг. Понимаете? Вот поэтому я здесь</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="wrapper">
+				<h2 class="services__title title">Услуги</h2>
+				<ul class="services__content">
+					<li class="services__content-item">
+						<h3 class="services__item-title">Кавитация</h3>
+						<p>Кавитация – это процедура удаления лишних жировых отложений при помощи ультразвука, которая получила свое название от одноименного физического процесса.</p>			
+
+						<button class="services__more button">Подробнее</button>
+					</li>
+
+					<li class="services__content-item">
+						<h3 class="services__item-title">Массаж</h3>
+						<p>Вакуумно-роликовый массаж - это процедура, во время 	которой происходит комплексное глубокое воздействия на эпидермис, дерму и подкожно-жировую клетчатку (гиподерму).
+						</p>						
+
+						<button class="services__more button">Подробнее</button>
+					</li>
+
+					<li class="services__content-item">
+						<h3 class="services__item-title">Радиолифтинг</h3>
+						<p>Аппаратная методика воздействия током высокой частоты под воздействием которого идет активный нагрев поверхностных слоев кожи примерно до 42-44 градусов по Цельсию. Нагрев до такой температуры провоцирует разрушение деформированных (старых) волокон коллагена и эластина и уплотнение/укрепление тех волокон, которые сохранились. 
+						</p>						
+
+						<button class="services__more button">Подробнее</button>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="price">
+			<div class="wrapper">
+				<h2 class="price__title title">Цены</h2>
+				<div class="price__slider slider slider--desktop">
+					<div class="slider__controls">
+						<button class="slider__button slider__prev price__prev">
+							<span class="visually-hidden">Назад</span>
+						</button>
+						<button class="slider__button slider__next price__next">
+							<span class="visually-hidden">Вперед</span>
+						</button>
+					</div>
+					<ul class="slider__slides price__slides">
+						<li class="slider__slide price__slide">
+							<h3 class="slider__title">Кавитация</h3>
+							<div class="slider__content">
+								<ul class="price__slider-list price-list">
+									<li class="price-list__item">
+										<span class="price-list__name">20 минут</span>
+										<span class="price-list__price">400 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">40 минут</span>
+										<span class="price-list__price">800 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">60 минут</span>
+										<span class="price-list__price">1 000 р.</span>
+									</li>											
+								</ul>
+							</div>
+						</li>
+
+						<li class="slider__slide price__slide">
+							<h3 class="slider__title">Аппаратный массаж</h3>
+							<div class="slider__content">
+								<ul class="price__slider-list price-list">
+									<li class="price-list__item">
+										<span class="price-list__name">1 сеанс (60 минут)</span>
+										<span class="price-list__price">800 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Абонемент 5 сеансов</span>
+										<span class="price-list__price">3 500 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Абонемент 10 сеансов</span>
+										<span class="price-list__price">6 900 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Абонемент 12 сеансов</span>
+										<span class="price-list__price">7 400 р.</span>
+									</li>									
+								</ul>
+							</div>
+						</li>
+
+						<li class="slider__slide price__slide">
+							<h3 class="slider__title">RF-лифтинг</h3>
+							<div class="slider__content">
+								<ul class="price__slider-list price-list">
+									<li class="price-list__item">
+										<span class="price-list__name">20 минут</span>
+										<span class="price-list__price">400 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">40 минут</span>
+										<span class="price-list__price">800 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">60 минут</span>
+										<span class="price-list__price">1 000 р.</span>
+									</li>											
+								</ul>
+							</div>
+						</li>						
+
+						<li class="slider__slide price__slide">
+							<h3 class="slider__title">Депиляция</h3>
+							<div class="slider__content">
+								<ul class="price__slider-list price-list">
+									<li class="price-list__item">
+										<span class="price-list__name">Глубокое бикини</span>
+										<span class="price-list__price">800 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Классическое бикини</span>
+										<span class="price-list__price">500 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Подмышечные впадины</span>
+										<span class="price-list__price">200 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Ножки полностью</span>
+										<span class="price-list__price">900 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Голень</span>
+										<span class="price-list__price">500 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Бедро</span>
+										<span class="price-list__price">500 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Лицо (одна зона)</span>
+										<span class="price-list__price">200 р.</span>
+									</li>
+
+									<li class="price-list__item">
+										<span class="price-list__name">Лицо полностью</span>
+										<span class="price-list__price">400 р.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<section class="sale">
+				<div class="wrapper">
+					<h2 class="sale__title title">Акции</h2>
+					<ul class="sale__list">
+						<li class="sale__item order-button">
+							<div class="sale__container">
+								<div class="sale__image"></div>
+								<p class="sale__description">Скидка на первую процедуру
+								депиляции -20%</p> 
+							</div>
+							
+							<span>Жми, чтобы записаться скорей!</span>
+						</li>
+
+						<li class="sale__item order-button">
+							<div class="sale__container">
+								<div class="sale__image"></div>
+								<p class="sale__description">Первый сеанс массажа и составление индивидуальной программы 500р</p>
+							</div>
+							<span>Жми, чтобы записаться скорей!</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="contacts">			
+				<div class="wrapper">
+					<h2 class="contacts__title title">Контакты</h2>
+					<div class="contacts__container">
+						<p class="contacts__adress">г. Новокузнецк, <br> Франкфурта, 5</p>
+						<a href="tel:+79235111555" class="contacts__phone">+7 (923) 511 15 55</a>
+						<div class="contacts__map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2358.6408384406564!2d87.1508769505235!3d53.76027815122967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42d0c16ce0775ac7%3A0x1c09553194a22e0c!2z0YPQuy4g0KTRgNCw0L3QutGE0YPRgNGC0LAsIDUsINCd0L7QstC-0LrRg9C30L3QtdGG0LosINCa0LXQvNC10YDQvtCy0YHQutCw0Y8g0L7QsdC7LiwgNjU0MDgw!5e0!3m2!1sru!2sru!4v1590038416170!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</div>
+						<button class="order-button button contacts__button">Записаться</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="wrapper">
+			<div class="page-footer__social social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="https://vk.com/tanya_sugaring" class="social__link">
+							<span class="visually-hidden">вконтакте</span>
+							<svg class="social__icon" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40">
+				                <use xlink:href="#vk-icon"></use>
+				            </svg>
+						</a>
+					</li>
+
+					<li class="social__item">
+						<a href="https://www.instagram.com/tanya_sugaring/" class="social__link">
+							<span class="visually-hidden">инстаграм</span>
+							<svg class="social__icon" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40">
+				                <use xlink:href="#insta-icon"></use>
+				            </svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page-footer__copyright">
+				<p>Developed by:</p>
+				<a href="https://borisbesedin.github.io/">Boris Besedin</a>
+			</div>
+		</div>
+	</footer>
+
+	<section class="feedback popup">
+		<button class="popup__close">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
+		<div class="wrapper">
+			<h2 class="visually-hidden">Записаться</h2>
+			
+			<div class="feedback__contaner">
+				<p class="feedback__description">Введите ваши данные для записи</p>
+				<form class="feedback__form form" action="#" method="post">
+					<div class="form__container">
+						<p class="form__item">
+							<label for="name">Ваше имя</label>
+							<input type="text" id="name" name="name" placeholder="Вадик" required>
+						</p>
+						<p class="form__item">
+							<label for="phone">Номер телефона</label>
+							<input type="text" id="phone" name="phone" placeholder="+7 (123) 456 78 90" required>
+						</p>
+						<p class="form__item">
+							<label for="message">Сообщение</label>
+							<textarea type="text" id="message" name="message" placeholder="что-нибудь приличное" rows="3"></textarea>
+						</p>
+					</div>
+					
+					<button type="submit" class="form__submit button">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="info-popup popup">
+		<button class="popup__close">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
+		<div class="wrapper">
+			<h2 class="visually-hidden">О процедурах</h2>
+			<div class="popup__slider info-popup__slider">
+				<div class="slider__controls info-popup__controls">
+					<button class="slider__button slider__prev info-popup__prev">
+						<span class="visually-hidden">Назад</span>
+					</button>
+					<button class="slider__button slider__next info-popup__next">
+						<span class="visually-hidden">Вперед</span>
+					</button>
+				</div>
+
+				<ul class="slider__slides info-popup__slides">
+					<li class="slider__slide info-popup__slide">
+						<h3 class="slider__title">Кавитация</h3>
+						<div class="slider__content procedure">
+							<p class="procedure__description">Метод ультразвуковой кавитации, один из самых эффективных способов моделирования контуров тела, устранения локальных жировых отложений и избавления от целлюлита, практически на любой его стадии.</p>
+							<p class="procedure__description">Название кавитация, пришло в косметологию из физики. «Каверы» это газожидкостные пузырьки, которые образуются в жидкости, при воздействии ультразвука с частотой от 32 до 42кГц. Хаотично двигаясь с высокой скоростью, каверы схлопываются, выделяя большое количество энергии и образуя, своего рода, микровзрыв. Именно этот процесс вызывает повреждение оболочки жировой клетки, вследствие чего, она становится нежизнеспособной и утилизируется организмом через лимфатическую систему.</p>
+							<p class="procedure__description">Метод ультразвуковой липосакции уникален еще и тем, что атаке подвергаются только плотно заполненные жировые клетки, а нервные окончания, сосуды и прочие органы, остаются невредимыми, так как имеют более плотную и эластичную структуру.</p>
+							<div class="procedure__container">
+								<h4 class="procedure__title">Показания</h4>
+								<ul class="procedure__list">
+									<li class="procedure__item">
+										Моделирование фигуры
+									</li>
+
+									<li class="procedure__item">
+										Целлюлит на любых стадиях
+									</li>
+									<li class="procedure__item">
+										Исправления дефектов после хирургической липосакции
+									</li>
+								</ul>
+							</div>
+
+							<div class="procedure__container">
+								<h4 class="procedure__title">Противопоказания</h4>
+								<ul class="procedure__list">
+									<li class="procedure__item">
+										Аутоиммунные заболевания
+									</li>
+
+									<li class="procedure__item">
+										Беременность
+									</li>
+									<li class="procedure__item">
+										Возраст до 18 лет
+									</li>
+									<li class="procedure__item">
+										Гепатит
+									</li>
+
+									<li class="procedure__item">
+										Инфекции
+									</li>
+									<li class="procedure__item">
+										Лактация
+									</li>
+									<li class="procedure__item">
+										Онкология
+									</li>
+									<li class="procedure__item">
+										Остеопороз
+									</li>
+									<li class="procedure__item">
+										Открытые раны в месте обработки
+									</li>
+									<li class="procedure__item">
+										Патология крови
+									</li>
+									<li class="procedure__item">
+										Почечная недостаточность
+									</li>
+									<li class="procedure__item">
+										Психические расстройства
+									</li>
+									<li class="procedure__item">
+										Сахарный диабет
+									</li>
+									<li class="procedure__item">
+										Тяжелые травмы
+									</li>
+									<li class="procedure__item">
+										Хронические заболевания
+									</li>
+
+								</ul>
+							</div>
+								
+						</div>
+					</li>
+
+					<li class="slider__slide info-popup__slide">
+						<h3 class="slider__title">Массаж</h3>
+						<div class="slider__content procedure">
+							<p class="procedure__description">В результате воздействия аппарата происходит стимуляция выработки новых клеток фибробластов, которые синтезируют волокна коллагена, эластина и кислые мукополисахариды (гиалуроновую кислоту, хондроитинсерную кислоту, глюкозамин, галактозамин). Это приводит к увеличению упругости и эластичности кожи, а также дает хороший лифтинг-эффект. Улучшается кровообращение, происходит насыщение тканей кислородом, выводится лишняя жидкость, улучшаются обменные процессы и тонизируются мышцы.</p>
+							<p class="procedure__description">При помощи вакуума кожная складка захватывается внутрь камеры манипулы. Происходит стимуляция липолиза (разрушение липидов) в адипоцитах (жировых клетках) за счет дополнительной оксигенации тканей, этот процесс приводит к уменьшению объема жировой прослойки. Повышается активность фибробластов в коже, которые синтезируют коллаген, эластин, глюкозаминогликаны (гиалуроновую кислоту, хондроитинсерную кислоту, глюкозамин, галактозамин), которые отвечают за эластичность и тургор кожи. Увеличивается артериальный приток и венозный отток крови в обрабатываемых зонах, а также улучшается лимфатический отток и обменные процессы в тканях. Эти процессы приводят к устранению застойных явлений, уменьшению отеков за счет вывода из межклеточного пространства лишней жидкости и токсинов.</p>
+							<p class="procedure__description">Также такой массаж способствует повышению тонуса и уменьшению боли в подлежащих мышцах за счет механического воздействия, а также улучшает настроение и общее самочувствие.</p>
+							<div class="procedure__container">
+								<h4 class="procedure__title">Показания</h4>
+								<ul class="procedure__list">
+									<li class="procedure__item">
+										Пониженный тонус кожи
+									</li>
+
+									<li class="procedure__item">
+										Складки и жировые отложения на ягодицах, животе или бёдрах
+									</li>
+									<li class="procedure__item">
+										Ожирение, в любой его степени и целлюлит
+									</li>
+									<li class="procedure__item">
+										Гематомы, подкожные инфильтраты
+									</li>
+
+									<li class="procedure__item">
+										Отечности на теле
+									</li>
+									<li class="procedure__item">
+										Асимметрия тканей и возможное их провисание вследствие беременности или резкого похудания
+									</li>
+								</ul>
+							</div>
+
+							<div class="procedure__container">
+								<h4 class="procedure__title">Противопоказания</h4>
+								<ul class="procedure__list">
+									<li class="procedure__item">
+										Беременность и лактация
+									</li>
+
+									<li class="procedure__item">
+										Жировые или сосудистые новообразования в кожном покрове
+									</li>
+									<li class="procedure__item">
+										Заболевания, связанные со свертываемостью крови (гемофилия)
+									</li>
+									<li class="procedure__item">
+										Нестабильные психо-эмоциональные состояния, эпилепсия
+									</li>
+
+									<li class="procedure__item">
+										Инфекционно-воспалительные заболевания кожи
+									</li>
+									<li class="procedure__item">
+										Лимфаденит
+									</li>
+									<li class="procedure__item">
+										Злокачественные новообразования
+									</li>
+									<li class="procedure__item">
+										Заболевания вен (флебит, тромбофлебит)
+									</li>
+									<li class="procedure__item">
+										Хронические заболевания в фазе обострения
+									</li>									
+								</ul>
+							</div>								
+						</div>
+					</li>
+
+					<li class="slider__slide info-popup__slide">
+						<h3 class="slider__title">Радиолифтинг</h3>
+						<div class="slider__content procedure">
+							<p class="procedure__description">Одним из самых важных преимуществ радиолифтинга в том, что он запускает механизмы омоложения не за счет введения чужеродных средств, а благодаря стимуляции собственных ресурсов кожи. Это означает, что процедура не вызывает синдром отмены т.е. ухудшения состояния кожи через некоторое время.</p>
+							<p class="procedure__description">Все области, которые нуждаются в подтяжке кожи, увеличении ее плотности, могут подвергаться процедуре радиолифтинга.</p>
+							<p class="procedure__description">В зависимости от необходимости применения на той или иной области лица и тела в радиолифтинге применяются разные манипулы или насадки.</p>
+							<div class="procedure__container">
+								<h4 class="procedure__title">Показания</h4>
+								<ul class="procedure__list">
+									<li class="procedure__submenu">
+										<h5>На лице</h5>
+										<ul>
+											<li class="procedure__item">
+												Наличие пигментных пятен
+											</li>
+
+											<li class="procedure__item">
+												Наличие мимических складок и морщин
+											</li>
+											<li class="procedure__item">
+												Мешки вокруг глаз
+											</li>
+											<li class="procedure__item">
+												Дряблость кожи
+											</li>
+
+											<li class="procedure__item">
+												Наличие большого количества пор на коже
+											</li>
+											<li class="procedure__item">
+												Наличие второго подбородка
+											</li>
+											<li class="procedure__item">
+												Снижение тонуса мышц
+											</li>
+										</ul>
+									</li>
+
+									<li class="procedure__submenu">
+										<h5>На теле</h5>
+										<ul>
+											<li class="procedure__item">
+												Наличие растяжек на теле
+											</li>
+
+											<li class="procedure__item">
+												Фиброзный, отечный целлюлит
+											</li>
+											<li class="procedure__item">
+												Растяжки на коже в результате похудения
+											</li>
+											<li class="procedure__item">
+												Жировые отложения локального характера
+											</li>
+
+											<li class="procedure__item">
+												Возрастная потеря упругости кожи
+											</li>
+											<li class="procedure__item">
+												Снижение тонуса мышц
+											</li>
+										</ul>
+									</li>									
+								</ul>
+							</div>
+
+							<div class="procedure__container">
+								<h4 class="procedure__title">Противопоказания</h4>
+								<ul class="procedure__list">
+									<li class="procedure__item">
+										Беременность и лактация
+									</li>
+
+									<li class="procedure__item">
+										Наличие вирусных заболеваний, повышенная температура тел
+									</li>
+									<li class="procedure__item">
+										Аллергии в стадии обострения
+									</li>
+									<li class="procedure__item">
+										Нестабильные психо-эмоциональные состояния, эпилепсия
+									</li>
+
+									<li class="procedure__item">
+										Инфекционно-воспалительные заболевания кожи
+									</li>
+									<li class="procedure__item">
+										Перенесенные ранее косметические или медицинские операции, затрагивающие обрабатываемую область в течение 3 месяцев
+									</li>
+									<li class="procedure__item">
+										Наличие доброкачественных либо злокачественных образований
+									</li>
+									<li class="procedure__item">
+										Тату, перманентный макияж или наличие силикона в обрабатываемой области
+									</li>
+									<li class="procedure__item">
+										Металлические имплантанты в обрабатываемой области
+									</li>
+									<li class="procedure__item">
+										Кардиостимулятор, дефибриллятор или другой имплантированный электронный механизм
+									</li>									
+								</ul>
+							</div>								
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
    
-    <script src="/js/script-min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

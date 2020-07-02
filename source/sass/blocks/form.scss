@@ -1,0 +1,60 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 60vh;
+	justify-content: space-between;
+}
+
+.form__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+
+	& label {
+		@include setFont(18px, 22px, bold, $textColor);
+		text-transform: uppercase;
+	}
+
+	& input {
+		margin-top: 20px;
+		padding: 10px;
+		border-radius: 10px;
+		border: 2px solid $bgColor-4;
+		@include setFont(18px, 22px, normal, $textColor);
+	}
+
+	& textarea {
+		width: 100%;
+		margin-top: 20px;
+		padding: 10px;
+		border-radius: 10px;
+		border: 2px solid $bgColor-4;
+		resize: none;
+		@include setFont(16px, 20px, normal, $textColor);
+	}
+}
+
+@media (min-width: 960px) {
+	.form {
+		height: auto;
+	}
+	.form__item {
+		& label {
+			@include setFont(20px, 24px, bold, $textColor);
+		}
+
+		& input {
+			@include setFont(20px, 24px, normal, $textColor);
+		}
+
+		& textarea {
+			@include setFont(18px, 22px, normal, $textColor);
+		}
+	}
+
+	.form__submit {
+		margin-top: 30px;
+	}
+}

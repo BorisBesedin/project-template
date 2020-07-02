@@ -1,0 +1,16 @@
+.price {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $bgColor-3;
+	width: 100%;
+}
+
+@media (min-width: 960px) {
+	.price {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-image: url('../img/bg-img-2.jpg');
+		background-size: cover;	
+	}
+	
+}
